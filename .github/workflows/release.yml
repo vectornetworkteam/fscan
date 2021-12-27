@@ -1,9 +1,10 @@
 name: goreleaser
 
 on:
-  push:
-    tags:
-      - '*'
+#    schedule:
+#      - cron: '0 0 * * *'
+# Remove both comments to run this action on daily basis.
+    workflow_dispatch:
 
 permissions:
   contents: write
